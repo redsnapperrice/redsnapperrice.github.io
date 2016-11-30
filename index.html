@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link rel="canonical" href="https://redsnapperrice.github.io/" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
     <link rel="shortcut icon" type="image/png" href="redsnapperrice.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
         body {
-        color: #333;
-        font-size: 16px;
+            color: #333;
+            font-size: 14px;
+            font-family: Helvetica, Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-seri;
+        }
+        a:link,a:visited,a:active {
+            color: #e67e22;
+        }
+        a:hover {
+            color: #c0392b;
         }
         header {
             margin-top: 70px;
@@ -20,77 +26,72 @@
             margin-bottom: 30px;
             margin-top: 30px;
         }
+        .container {
+            text-align: center;
+        }
         .main {
-            margin-top: 30px;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        .subtitle {
+            font-size: 18px;
+        }
+        .gray {
+            color: #aaa;
         }
     </style>
     <title>RedSnapperRice's Personal Website</title>
 </head>
 <body>
-    <header class="container text-xs-center">
+    <header class="container">
         <amp-img src="redsnapperrice.png" height="200" width="200"></amp-img>
         <h1>鯛めし</h1>
-        <p class="text-muted">RedSnapperRice's Personal Website</p>
+        <p class="gray">RedSnapperRice's Personal Website</p>
     </header>
 
-    <div class="container text-xs-center main">
-        <p class="lead text-muted">Work</p>
+    <div class="container main">
+        <p class="subtitle gray">Work</p>
         <p>Developing WEB Apps/Sites<br>
-        Especially, the front-end is my strong field.</p>
+        Especially, the front-end is my favorite field.</p>
     </div>
 
-    <div class="container text-xs-center main">
-        <p class="lead text-muted">Language</p>
-        <ul class="list-inline">
-            <li class="list-inline-item">HTML5</li>
-            <li class="list-inline-item">CSS3</li>
-            <li class="list-inline-item">JavaScript</li>
-            <li class="list-inline-item">PHP</li>
-            <li class="list-inline-item">C#</li>
-        </ul>
+    <div class="container main">
+        <p class="subtitle gray">Language</p>
+            HTML5 CSS3 JavaScript PHP C#
     </div>
 
-    <div class="container text-xs-center main">
-        <p class="lead text-muted">Repository</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://github.com/redsnapperrice" target="_blank">GitHub</a></li>
-            <li class="list-inline-item"><a href="https://hub.docker.com/u/redsnapper/" target="_blank">DockerHub</a></li>
-        </ul>
-        <p></p>
+    <div class="container main">
+        <p class="subtitle gray">Repository</p>
+            <a href="https://github.com/redsnapperrice" target="_blank">GitHub</a> 
+            <a href="https://hub.docker.com/u/redsnapper/" target="_blank">DockerHub</a>
+        </p>
     </div>
 
-    <div class="container text-xs-center main">
-        <p class="lead text-muted">Blog</p>
-        <p class="text-muted small">- Japanese -</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://twitter.com/redsnapper_rice" target="_blank">Twitter</a></li>
-            <li class="list-inline-item"><a href="http://redsnapper.hatenablog.com/" target="_blank">HatenaBlog<small>(Tech)</small></a></li>
-            <li class="list-inline-item"><a href="https://note.mu/redsnapper" target="_blank">note<small>(Essay)</small></a></li>
-        </ul>
-
-        <p class="text-muted small">- English -</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://medium.com/@redsnapper_rice" target="_blank">Medium<small>(Essay)</small></a></li>
-        </ul>
-        <p></p>
+    <div class="container main">
+        <p class="subtitle gray">Blog</p>
+        <p><small class="gray">- Japanese -</small><br>
+            <a href="https://twitter.com/redsnapper_rice" target="_blank">Twitter</a> 
+            <a href="http://redsnapper.hatenablog.com/" target="_blank">HatenaBlog<small>(Tech)</small></a> 
+            <a href="https://note.mu/redsnapper" target="_blank">note<small>(Essay)</small></a>
+        </p>
+        <p><small class="gray">- English -</small><br>
+            <a href="https://medium.com/@redsnapper_rice" target="_blank">Medium<small>(Essay)</small></a>
+        </p>
     </div>
 
-    <div class="container text-xs-center main">
-        <p class="lead text-muted">Hobby</p>
-        <ul class="list-inline">
-            <li class="list-inline-item">Books</li>
-            <li class="list-inline-item">Movies</li>
-            <li class="list-inline-item">Drawing</li>
-            <li class="list-inline-item">Writing</li>
-        </ul>
+    <div class="container main">
+        <p class="subtitle gray">Hobby</p>
+            Books 
+            Movies 
+            Drawing 
+            Writing
     </div>
 
-    <footer class="container text-xs-center">
+    <footer class="container">
         <small>&copy; 2016 鯛めし RedSnapperRice.</small>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.8/js/tether.min.js" integrity="sha256-/5pHDZh2fv1eZImyfiThtB5Ag4LqDjyittT7fLjdT/8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 </body>
 </html>
