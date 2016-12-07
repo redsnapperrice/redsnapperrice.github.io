@@ -11,8 +11,10 @@
         body {
             color: #333;
             line-height: 1.5;
-            font-size: 14px;
+            font-size: 16px;
             font-family: Helvetica, Hiragino Sans, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-seri;
+            padding-bottom: 20px;
+            padding-top: 70px;
         }
         a:link,a:visited,a:active {
             color: #e67e22;
@@ -20,15 +22,8 @@
         a:hover {
             color: #c0392b;
         }
-        header {
-            margin-top: 70px;
-        }
-        footer {
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
         .container {
-            text-align: center;
+            margin: 0 auto;
         }
         .main {
             margin-top: 50px;
@@ -37,16 +32,33 @@
             margin-bottom: 0;
         }
         .subtitle {
-            font-size: 18px;
+            font-size: 22px;
+        }
+        .contents {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .textcenter {
+            text-align: center;
         }
         .gray {
             color: #aaa;
+        }
+        @media (max-width: 750px) {
+            .container {
+                width: 90%;
+            }
+        }
+        @media (min-width: 751px){
+            .container {
+                width: 60%;
+            }
         }
     </style>
     <title>RedSnapperRice's Personal Website</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container textcenter">
         <amp-img src="redsnapperrice.png" height="200" width="200"></amp-img>
         <h1>鯛めし</h1>
         <p class="gray">RedSnapperRice's Personal Website</p>
@@ -54,47 +66,64 @@
 
     <div class="container main">
         <p class="subtitle gray">My Work</p>
-        <p>Developing WEB Apps/Sites<br>
-        Especially, the front-end is my strong field.</p>
+        <div class="contents">
+            <p>Developing WEB Apps/Sites<br>
+            Especially, the front-end is my strong field.</p>
+        </div>
     </div>
 
     <div class="container main">
         <p class="subtitle gray">Languages and Tools</p>
-            HTML5, CSS3 <small>(SCSS Bootstrap)</small>,<br>
-            JS <small>(ES5/6 jQuery CoffeeScript BackboneJS)</small>,<br>
-            Gulp, PHP <small>(Laravel)</small>, C# <small>(ASP.NET)</small>,<br>
-            Oracle, MySQL, PostgresSQL,<br>
-            GitHub, Gitlub, Redmine, Backlog
+        <div class="contents">
+            <p><small class="gray">- Front-end -</small><br>
+                HTML5, CSS3 <small>(SCSS, Bootstrap)</small>, JS <small>(ES5/6, jQuery, CoffeeScript, BackboneJS)</small>, Gulp
+            </p>
+            <p><small class="gray">- Back-end -</small><br>
+                PHP <small>(Laravel)</small>, C# <small>(ASP.NET)</small>
+            </p>
+            <p><small class="gray">- DB -</small><br>
+                Oracle, MySQL, PostgresSQL
+            </p>
+            <p><small class="gray">- Tools -</small><br>
+                GitHub, Gitlub, Redmine, Backlog
+            </p>
+        </div>
     </div>
 
     <div class="container main">
         <p class="subtitle gray">Repositories</p>
-            <a href="https://github.com/redsnapperrice" target="_blank">GitHub</a> 
-            <a href="https://hub.docker.com/u/redsnapper/" target="_blank">DockerHub</a>
-        </p>
+        <ul>
+            <li><a href="https://github.com/redsnapperrice" target="_blank">GitHub</a></li>
+            <li><a href="https://hub.docker.com/u/redsnapper/" target="_blank">DockerHub</a></li>
+        </ul>
     </div>
 
     <div class="container main">
         <p class="subtitle gray">Blogs</p>
-        <p><small class="gray">- Japanese -</small><br>
-            <a href="https://twitter.com/redsnapper_rice" target="_blank">Twitter</a> 
-            <a href="http://redsnapper.hatenablog.com/" target="_blank">HatenaBlog<small>(Tech)</small></a> 
-            <a href="https://note.mu/redsnapper" target="_blank">note<small>(Essay)</small></a>
-        </p>
-        <p><small class="gray">- English -</small><br>
-            <a href="https://medium.com/@redsnapper_rice" target="_blank">Medium<small>(Essay)</small></a>
-        </p>
+        <div class="contents">
+            <p><small class="gray">- Japanese -</small>
+                <ul>
+                    <li><a href="https://twitter.com/redsnapper_rice" target="_blank">Twitter</a></li>
+                    <li><a href="http://redsnapper.hatenablog.com/" target="_blank">HatenaBlog <small>(Tech)</small></a></li>
+                    <li><a href="https://note.mu/redsnapper" target="_blank">note <small>(Essay)</small></a></li>
+                </ul>
+            </p>
+            <p><small class="gray">- English -</small>
+                <ul>
+                    <li><a href="https://medium.com/@redsnapper_rice" target="_blank">Medium <small>(Essay)</small></a></li>
+                </ul>
+            </p>
+        </div>
     </div>
 
     <div class="container main">
         <p class="subtitle gray">Hobbies</p>
-            Books 
-            Movies 
-            Drawing 
-            Writing
+        <div class="contents">
+            Books, Movies, Drawing, Writing
+        </div>
     </div>
 
-    <footer class="container">
+    <footer class="container main textcenter">
         <small>&copy; 2016 鯛めし RedSnapperRice.</small>
     </footer>
 
